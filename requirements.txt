@@ -1,5 +1,5 @@
 mqp==1.4.6
-ansible==1.8.2
+ansible
 anyjson==0.3.3
 billiard==3.3.0.19
 celery==3.1.17
