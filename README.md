@@ -27,16 +27,16 @@ Install
 * 安装virtualenv
 
 ```Bash
-    # pip install virtualenv
+ # pip install virtualenv
 ```
 
 *配置mysql服务
 
 ```Bash
-    # /etc/init.d/mysqld start
-    # chkconfig mysqld on
-    # mysql
-     mysql>  create database ansible CHARACTER SET utf8;
-     mysql>  grant all on ansible.* to ansibleuser@'localhost' identified by 'password';
-     mysql>  flush privileges;
+ # /etc/init.d/mysqld start
+ # chkconfig mysqld on
+ # mysql
+   mysql>  create database ansible CHARACTER SET utf8;
+   mysql>  grant all on ansible.* to ansibleuser@'localhost' identified by 'password';
+   mysql>  flush privileges;
 ```
