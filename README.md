@@ -3,23 +3,40 @@ About
 该平台为[ansible](https://github.com/ansible/ansible)系统的web程序
 
 
-Function
-=====
-* 按照项目来组织布局，更为直观，上手简单
-* 提供简单易懂的主机管理界面
-* 提供用户密钥管理功能
-* 提供yml文件界面管理功能
-* 提供任务部署功能
-* 提供文件传输功能
-* 提供命令执行功能
-* 提供预约执行功能
-* 提供任务模板功能
-* 提供log功能
-* 提供邮件通知功能
-* 基于celery队列进行任务分发，便于扩展
-
-
-
 Install
 =====
 
+* 系统centos6.x
+
+* 安装依赖
+
+```Bash
+# yum install -y python-devel openldap-devel gcc mysql-server mysql-devel epel-release
+# yum install python-pip git
+``` 
+    
+* 配置pip源(可选)
+
+```Bash
+# mkdir ~/.pip
+# vim ~/.pip/pip.conf
+  [global]
+  index-url = http://mirrors.aliyun.com/pypi/simple/
+```
+
+* 安装virtualenv
+
+```Bash
+    # pip install virtualenv
+```
+
+*配置mysql服务
+
+```Bash
+    # /etc/init.d/mysqld start
+    # chkconfig mysqld on
+    # mysql
+     mysql>  create database ansible CHARACTER SET utf8;
+     mysql>  grant all on ansible.* to ansibleuser@'localhost' identified by 'password';
+     mysql>  flush privileges;
+```
