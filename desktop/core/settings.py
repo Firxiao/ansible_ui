@@ -165,7 +165,7 @@ INSTALLED_APPS = (
     'desktop.core.pagination',
 #    # Uncomment the next line to enable admin documentation:
 #    'django.contrib.admindocs',
-    'south',
+#    'south',
     'kombu.transport.django',
     'djcelery',
     'desktop.apps.ansible',
