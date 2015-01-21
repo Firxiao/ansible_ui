@@ -23,7 +23,7 @@
 # mkdir ~/.pip
 # vim ~/.pip/pip.conf
   [global]
-  index-url # http://mirrors.aliyun.com/pypi/simple/
+  index-url = http://mirrors.aliyun.com/pypi/simple/
 ```
 
 ##### 安装virtualenv
