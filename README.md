@@ -71,6 +71,11 @@ $ source ansible_ui_env/bin/activate
 ```Bash
 $ pip install -r /opt/ansible_ui/requirements.txt
 ```
+##### 配置ansible 免key检测
+
+```Bash
+$ cp /opt/ansible_ui/ansible-conf/ansible.cfg ~/.ansible.cfg
+```
 
 ##### 配置并启动celery
 
