@@ -7,8 +7,11 @@
 ##### 系统centos6.x:
 
 ##### 配置防火墙
-```
 
+```Bash
+# yum install -y lokkit
+# lokkit -p 80:tcp -p 8080:tcp -p 9001:tcp -p 22:tcp
+```
 
 ##### 安装依赖
 
