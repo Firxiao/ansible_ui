@@ -1,20 +1,20 @@
 ### 关于
-该平台为[ansible](https://github.com/ansible/ansible)系统的web程序
+该平台为[ansible](https://github.com/ansible/ansible)的web程序
 
 
 ### 安装
 
 
-### 系统centos6.x
+#### 系统centos6.x
 
-### 安装依赖
+#### 安装依赖
 
 ```Bash
 # yum install -y python-devel openldap-devel gcc mysql-server mysql-devel epel-release
 # yum install python-pip git
 ``` 
     
-### 配置pip源(可选)
+#### 配置pip源(可选)
 
 ```Bash
 # mkdir ~/.pip
@@ -23,13 +23,13 @@
   index-url # http://mirrors.aliyun.com/pypi/simple/
 ```
 
-### 安装virtualenv
+#### 安装virtualenv
 
 ```Bash
  # pip install virtualenv
 ```
 
-### 配置mysql服务
+#### 配置mysql服务
 
 ```Bash
  # /etc/init.d/mysqld start
@@ -40,14 +40,14 @@
    mysql>  flush privileges;
 ```
 
-### 下载源码
+#### 下载源码
 
 ```Bash
 # cd /opt/
 # git clone https://github.com/Firxiao/ansible_ui.git
 ```
 
-### 添加用户
+#### 添加用户
 
 ```Bash
 # cd /opt/
@@ -55,7 +55,7 @@
 # chown ansible_ui. -R ansible_ui
 ```
 
-### 切换至普通用户
+#### 切换至普通用户
 
 ```Bash
 # su - ansible_ui
