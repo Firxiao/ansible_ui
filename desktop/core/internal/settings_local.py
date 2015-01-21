@@ -1,6 +1,6 @@
 import os.path
 
-# LDAP settings
+# LDAP settings exapmle
 #NT4_DOMAIN = ""
 #LDAP_URL = "ldap://ldapserver:port"
 #BIND_USER = "CN=adreader,OU=xxx,OU=xxx,DC=xxx,DC=xxxx"
@@ -10,12 +10,12 @@ import os.path
 # Database settings
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ansible',                      # Or path to database file if using sqlite3.
-        'USER': 'ansibleuser',                      # Not used with sqlite3.
-        'PASSWORD': 'password',                  # Not used with sqlite3.
-        'HOST': 'localhost',
-        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql', # use mysql backend.
+        'NAME': 'ansible',                      # Database name.
+        'USER': 'ansibleuser',                      # mysql user.
+        'PASSWORD': 'password',                  # mysql password.
+        'HOST': 'localhost',                     # mysql hostname or ip
+        'PORT': '3306',                      # mysql port
     },
 }
 
