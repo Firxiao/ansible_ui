@@ -13,7 +13,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'ansible',                      # Or path to database file if using sqlite3.
         'USER': 'ansibleuser',                      # Not used with sqlite3.
-        'PASSWORD': 'test123',                  # Not used with sqlite3.
+        'PASSWORD': 'password',                  # Not used with sqlite3.
         'HOST': 'localhost',
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     },
@@ -24,4 +24,4 @@ MAIL_SENDER = "sender@domain.com"
 MAIL_SMTP = "mail.domain.com"
 
 # Ansible-playbook path
-ANSIBLE_PLAYBOOK = '~/ansible_ui/bin/ansible-playbook'
+ANSIBLE_PLAYBOOK = '/home/ansible_ui/ansible_ui_env/bin/ansible-playbook'
