@@ -24,4 +24,4 @@ MAIL_SENDER = "sender@domain.com"
 MAIL_SMTP = "mail.domain.com"
 
 # Ansible-playbook path
-ANSIBLE_PLAYBOOK = '/Users/Firxiao/virtualenv/ansibleweb/bin/ansible-playbook'
+ANSIBLE_PLAYBOOK = '/home/ansible_ui/ansible_ui_env/bin/ansible-playbook'
