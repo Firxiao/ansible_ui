@@ -54,6 +54,7 @@ def create_credential_file(user, ssh_key):
     f.writelines(ssh_key)
     f.flush()
     f.close()
+    os.chmod(file_path,0600)
     return file_path
 
 
