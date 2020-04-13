@@ -1,3 +1,4 @@
+# 停更 请参阅 https://github.com/ansible/awx
 ### 关于
 该平台为[ansible](https://github.com/ansible/ansible)的web程序
 
